@@ -19,7 +19,9 @@ flush(sp);
 
 % Simple UI
 f = figure('Name', sprintf('UART Plot [%s, CR/LF]', PORT), 'Color', 'w');
-ax = axes(f); grid(ax, 'on'); hold(ax, 'on');
+ax = axes(f); 
+grid(ax, 'on'); 
+hold(ax, 'on');
 xlabel(ax, 'time (s)'); ylabel(ax, 'ch1');
 h = animatedline('LineWidth', 1.1);
 
