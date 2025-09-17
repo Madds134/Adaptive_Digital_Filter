@@ -6,7 +6,7 @@ function uart_plotter_csv_()
 
 %% ---- CONFIG ----
 PORT            = "COM5";
-BAUD            = 115200;
+BAUD            = 203400;
 TIMEOUT_S       = 0.1;
 PLOT_WINDOW_SEC = 10;      % seconds shown on the x-axis
 DECIMATE_PLOT   = 1;       % plot every Nth sample
@@ -74,3 +74,4 @@ end
 function local_close(sp)
     try, if ~isempty(sp) && isvalid(sp), flush(sp); clear sp; end, catch, end
 end
+
